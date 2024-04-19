@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial.scale=1.0">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <title>Elevator Simulator</title>
+    </head>
+    <body>
+        <main class="conteneur">
+            <div class="simulation">
+                <div id="screen">
+                    <div id="deplacement">
+                    <div id="stepsDisplay"></div>
+                </div>
+                </div>
+                <div class="steps">
+                    <span>Steps</span>
+                </div>
+                <span id="action">Actions</span>
+                <div class="square">
+                    <button id="square0"><span>A0</span></button>
+                    <button id="square1"><span>A1</span></button>
+                    <button id="square2"><span>A2</span></button>
+                    <button id="square3"><span>A3</span></button>
+                    <button id="square4"><span>A4</span></button>
+                </div>
+                <div class="btn">
+                    <button type="button" id="btnStart"><span>Start</span></button>
+                    <button type="button" id="btnReset"><span>Reset</span></button>
+                </div>
+            </div>
+            <div class="elevator">
+                <div class="etage4">
+                    <span>A4</span>
+                </div>
+                <div class="etage3">
+                    <span>A3</span>
+                </div>
+                <div class="etage2">
+                    <span>A2</span>
+                </div>
+                <div class="etage1">
+                    <span>A1</span>
+                </div>
+                <div class="etage0">
+                    <span>A0</span>
+                    <div id="porte">
+                        <div class="door" id="porte1"></div>
+                        <div class="door" id="porte2"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <script src="JS/script.js"></script>
+
+       
+        </body>
+</html>

@@ -1,0 +1,400 @@
+main {
+  
+  background-color: #686565;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns:auto auto;
+  
+}
+.elevator{
+  width: 385px;
+  position: relative;
+  border-radius: 15px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.elevator div{
+  background-color: rgb(238, 127, 8);
+  width: 380px;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 4px;
+  line-height:108px;
+}
+
+.elevator .etage0{
+  background-color: rgb(242, 236, 206);
+
+}
+.elevator  .etage1{
+  background-color: rgb(206, 190, 136);
+
+}
+.elevator .etage2{
+  background-color:  rgb(255, 200, 0);
+
+}
+.elevator .etage3{
+  background-color: rgb(255, 174, 0);
+
+}
+.elevator .etage4{
+  background-color: rgb(255, 132, 0);
+
+}
+.elevator div span{
+  font-family: cursive;
+  margin-top: 0%;
+}
+
+/*#porte{
+height: 104px;
+background-color:rgb(242, 236, 206);
+border-style :solid ;
+border-width:3px ;
+position: absolute;
+top:466px ;
+width: 100px;
+margin-left: 122px;
+display: inline-flex;
+animation-name: move;
+animation-duration: 2s;
+animation-direction: alternate;
+}
+
+/*@keyframes move{
+0%   {
+  top:472px;
+}
+25%  {
+  top:358px;
+}
+
+}*/
+/*#porte .porte1{
+height: 104px;
+background-color:rgb(123, 0, 238);
+border-style :solid ;
+border-width:1px ;
+width: 50px;
+margin: 1px;
+MARGIN-TOP: 0px;
+margin-right: 1px;
+animation-name: movePorte;
+animation-duration: 2s;
+animation-delay: 2s;
+overflow: auto;
+}
+@keyframes movePorte{
+from{
+  margin-right: 1px;
+}
+to{
+  margin-right: 85px;
+}
+
+}
+#porte .porte2{
+height: 104px;
+background-color:rgb(123, 0, 238);
+border-style :solid ;
+border-width:1px ;
+margin: 1px;
+width: 50px;
+margin-left: 0px;
+MARGIN-TOP: 0px
+}*/
+
+#porte {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  MARGIN-LEFT: 129px;
+  top: 466px;
+ 
+}
+
+
+.door {
+ width: 49px;
+  height: 17vh;
+  background-color: #d31a1a;
+  transition: transform 2s ease;
+
+}
+
+#porte1{
+  transform-origin: left center;
+}
+
+#porte2 {
+  transform-origin: right center;
+}
+
+.simulation{
+  width: auto;
+  margin-top: 20px;
+}
+#screen{
+  display: flex;
+  margin-left: 120px;
+  border-style: dotted;
+  border-radius: 10px;
+  height: 160px;
+  margin-top: 30px;
+  width: 350px;
+  overflow: auto;
+  background-color: #545353;
+}
+#screen11{
+  margin-top: 60x;
+}
+#screen0 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-style: dotted;
+  border-radius: 10px;
+  background-color: rgb(242, 236, 206);
+  
+}
+#screen1 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-style: dotted;
+  border-radius: 10px;
+  background-color: rgb(206, 190, 136);
+  
+}
+#screen2 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-style: dotted;
+  border-radius: 10px;
+  background-color:  rgb(255, 200, 0);
+  
+} 
+#screen3 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-style: dotted;
+  border-radius: 10px;
+  background-color: rgb(255, 174, 0);
+  
+}
+#screen4 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-style: dotted;
+  border-radius: 10px;
+  background-color: rgb(255, 132, 0);
+  
+  
+} 
+#screen #A{
+  font-size:25px ;
+  font-family: cursive;
+} 
+#screen .S{
+  position: absolute;
+  right: 910px;
+  top: 125px;
+  font-size: 28px;
+  font-family: cursive;
+}  
+
+
+#stepsDisplay {
+  justify-content: center;
+  margin-top: 10px; /* Ajustez la marge supérieure selon vos besoins */
+  font-size: xx-large;
+  font-family: cursive;
+  direction: trl;
+}
+
+#screen::-webkit-scrollbar {
+  width: 5px;
+ /* Largeur de la barre de défilement */
+}
+
+#screen::-webkit-scrollbar-thumb {
+  background-color: #292727; /* Couleur de fond de la barre de défilement */
+  border-radius: 5px; /* Ajoutez une bordure arrondie à la barre de défilement */
+}
+
+#screen::-webkit-scrollbar-track {
+  background-color: #131212; /* Couleur de fond de la piste de la barre de défilement */
+}
+
+.steps{
+  display: flex;
+  margin-left: 85px;
+  border-style: dotted;
+  border-radius: 10px;
+  height: 50px;
+  width: 420px;
+  justify-content: center;
+  margin-top: 20px;
+  position: absolute;
+  background-color: #545353;
+}
+.steps span{
+  margin:2px;
+  font-size: 28px;
+  margin-top: 7px;
+  font-family: cursive;
+}
+.simulation #action{
+  position: absolute;
+  margin: 90px;
+  margin-left: 240px;
+  font-size: 28px;
+  font-family: cursive;
+}
+
+.square{
+  display: flex;
+  margin-left: 150px;
+  border-style:solid ;
+  border-width: 1px;
+  border-radius: 10px;
+  height: 51px;
+  width: 270px;
+  margin-top: 130px;
+  
+}
+#square0 {
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  margin-top: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: rgb(242, 236, 206);
+  cursor: pointer;
+  
+}
+#porte{
+  height: 104px;
+  background-color:rgb(242, 236, 206);
+  border-style :solid ;
+  border-width:3px ;
+  position: absolute;
+  top:466px ;
+  width: 100px;
+  margin-left: 122px;
+  display: inline-flex;
+ 
+}
+
+
+#porte #porte1{
+  height: 104px;
+  background-color:rgb(123, 0, 238);
+  border-style :solid ;
+  border-width:1px ;
+  width: 50px;
+  margin: 1px;
+  MARGIN-TOP: 0px;
+  margin-right: 1px;
+ 
+}
+
+
+#porte #porte2{
+  height: 104px;
+  background-color:rgb(123, 0, 238);
+  border-style :solid ;
+  border-width:1px ;
+  margin: 1px;
+  width: 50px;
+  margin-left: 0px;
+  MARGIN-TOP: 0px
+}
+#square1 {
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  margin-top: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: rgb(206, 190, 136);
+  cursor: pointer;
+
+}
+#square2 {
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  margin-top: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color:  rgb(255, 200, 0);
+  cursor: pointer;
+} 
+#square3 {
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  margin-top: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: rgb(255, 174, 0);
+  cursor: pointer;
+}
+#square4 {
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  margin-top: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  background-color: rgb(255, 132, 0);
+  cursor: pointer;
+} 
+.square span{
+  font-size: 25px;
+  font-family: cursive;
+}  
+.btn{
+  display: inline-block;
+  margin:30px;
+  margin-left: 93px;
+  
+}
+.btn #btnStart{
+  border-style:solid;
+  cursor: pointer;
+  width: 180px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 6px;
+  border-width: 1px;
+  background-color: aquamarine;
+}
+.btn #btnReset{
+  border-style:solid;
+  width: 180px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  border-width: 1px;
+  background-color: rgb(249, 143, 189);
+ 
+}
+.btn span{
+  font-size: 30px;
+  font-family: cursive;
+}
